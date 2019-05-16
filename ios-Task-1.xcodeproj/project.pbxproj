@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B818B27C228E0EA300F3FC8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B837EDCA228DCFAD00C34035 /* ios-Task-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-Task-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837EDCD228DCFAD00C34035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B837EDCF228DCFAD00C34035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		B837EDC1228DCFAD00C34035 = {
 			isa = PBXGroup;
 			children = (
+				B818B27C228E0EA300F3FC8A /* README.md */,
 				B837EDCC228DCFAD00C34035 /* ios-Task-1 */,
 				B837EDE1228DCFAF00C34035 /* ios-Task-1Tests */,
 				B837EDEC228DCFAF00C34035 /* ios-Task-1UITests */,
