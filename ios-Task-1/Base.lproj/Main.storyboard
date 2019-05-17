@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4400" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,7 +82,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYR-De-cZs">
                                         <rect key="frame" x="18" y="113" width="307" height="30"/>
@@ -178,6 +178,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Confirm_Password_Signup" destination="KJx-Ua-QjG" id="VxH-zb-rIs"/>
+                        <outlet property="Create_Passwrod_Signup" destination="CYR-De-cZs" id="TZn-b5-sw6"/>
+                        <outlet property="Email_Signup" destination="cnR-N9-rdV" id="Fno-kn-Nu8"/>
+                        <outlet property="Password_Login" destination="WQt-ry-ypD" id="6Cj-3O-EA3"/>
+                        <outlet property="Username_Login" destination="Uhe-OE-nza" id="ahP-fD-L5X"/>
+                        <outlet property="Username_Signup" destination="ooX-m3-3kR" id="YKG-i1-FC0"/>
                         <outlet property="btn_login" destination="u4s-no-c7W" id="ryS-7q-qVI"/>
                         <outlet property="btn_signup" destination="KGR-ve-Us6" id="7N9-IT-9Cw"/>
                         <outlet property="heading" destination="JxD-bP-Keb" id="a7B-El-AvZ"/>

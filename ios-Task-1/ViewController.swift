@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController , UITextFieldDelegate {
     
     @IBOutlet weak var login: UIView!
     @IBOutlet weak var signup: UIView!
@@ -19,6 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn_signup: UIButton!
     @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var tglr: UISwitch!
+    @IBOutlet weak var Username_Login: UITextField!
+    @IBOutlet weak var Password_Login: UITextField!
+    @IBOutlet weak var Username_Signup: UITextField!
+    @IBOutlet weak var Email_Signup: UITextField!
+    @IBOutlet weak var Create_Passwrod_Signup: UITextField!
+    @IBOutlet weak var Confirm_Password_Signup: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.backgroundColor = UIColor.white.cgColor
@@ -27,10 +32,26 @@ class ViewController: UIViewController {
         btn_signup.layer.cornerRadius = 4
         signup.layer.cornerRadius = 4
         login.layer.cornerRadius = 4
+        Username_Login.delegate = self
+        Password_Login.delegate = self
+        Username_Signup.delegate = self
+        Email_Signup.delegate = self
+        Create_Passwrod_Signup.delegate = self
+        Confirm_Password_Signup.delegate = self
+        
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func segaction(_ sender: Any) {
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    Username_Login.resignFirstResponder()
+    Password_Login.resignFirstResponder()
+    Username_Signup.resignFirstResponder()
+    Email_Signup.resignFirstResponder()
+    Create_Passwrod_Signup.resignFirstResponder()
+    Confirm_Password_Signup.resignFirstResponder()
+       return true
+    }
+    @IBAction func segaction(_ sender: UISegmentedControl) {
+    
         if( login.isHidden == true && signup.isHidden == false ){
             login.isHidden = false
             signup.isHidden = true
